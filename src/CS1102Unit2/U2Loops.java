@@ -1,3 +1,5 @@
+package CS1102Unit2;
+
 import javax.swing.*;
 
 /**
