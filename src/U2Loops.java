@@ -27,8 +27,40 @@ public class U2Loops {
         }
 
         // Do-while with an equivalent while and for loop
+        int lives = 5;
+        do {
+            System.out.println("Lives left: " + lives);
+            lives--;
+        } while (lives != 0);
+        System.out.println("Game over!\n");
+
+        lives = 5;
+        while (lives != 0) {
+            System.out.println("Lives left: " + lives);
+            lives--;
+        }
+        System.out.println("Game over!\n");
+
+        for (lives = 5; lives == 0; lives--) {
+            System.out.println("Lives left: " + lives);
+        }
 
         // For with an equivalent while and do-while loop
+        String[] fruits = {"apple", "orange", "banana"};
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
 
+        int index = 0;
+        while (index != (fruits.length)) {
+            System.out.println("Fruit: " + fruits[index]);
+            index++;
+        }
+
+        index = 0;
+        do {
+            System.out.println("Fruit: " + fruits[index]);
+            index++;
+        } while (index != (fruits.length));
     }
 }
