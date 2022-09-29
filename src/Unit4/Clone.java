@@ -1,9 +1,9 @@
 package Unit4;
 public class Clone {
     private static int cloneCount = 0;
-    private String name;
-    private String rank;
-    private String regiment;
+    private final String name;
+    private final String rank;
+    private final String regiment;
     private int clankerCount;
     private static int totalClankersEliminated = 0;
     public int getClankerCount() {
