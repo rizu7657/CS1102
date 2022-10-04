@@ -2,7 +2,7 @@ package Unit5;
 
 import javax.swing.*;
 
-public class MultipleChoiceQuestion {
+public class MultipleChoiceQuestion extends Question {
     // Constructor method
     MultipleChoiceQuestion(String query, String a, String b, String
             c, String d, String e, String answer) {
@@ -18,7 +18,6 @@ public class MultipleChoiceQuestion {
     /**
      * A method that asks the user for input between A-E.
      *
-     * @param question String
      * @return String character
      */
     String ask() {
