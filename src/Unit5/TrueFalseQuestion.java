@@ -9,19 +9,14 @@ import java.util.stream.Stream;
 public class TrueFalseQuestion extends Question {
     ArrayList<String> isTrue = new ArrayList<>(Arrays.asList("t", "true", "T", "True", "TRUE", "y", "yes", "Y", "Yes", "YES"));
     ArrayList<String> isFalse = new ArrayList<>(Arrays.asList("f", "false", "False", "FALSE", "n", "no", "No","NO"));
-    String answer;
-
-    TrueFalseQuestion(){
-        this("True is only True when False is False or not True?","True");
-    }
 
     TrueFalseQuestion(String question, String answer) {
         this.question = "TRUE or False: " + question;
 
         if (isTrue.contains(answer)) {
-            this.answer = answer;
+            this.correctAnswer = answer;
         } else if (isFalse.contains(answer)) {
-            this.answer = answer;
+            this.correctAnswer = answer;
         } else {
             throw new IllegalArgumentException("Answer must be TRUE or FALSE");
         }

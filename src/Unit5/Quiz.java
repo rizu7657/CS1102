@@ -88,6 +88,6 @@ public class Quiz {
         question10.check();
 
         // Display score result
-        MultipleChoiceQuestion.showResults();
+        Question.showResults();
     }
 }
