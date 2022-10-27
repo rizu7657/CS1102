@@ -17,9 +17,9 @@ public abstract class Question {
     }
 
     void initQuestionDialog() {
-        this.question.setModal(true);
-        this.question.pack();
-        this.question.setLocationRelativeTo(null);
+        this.question.setModal(true); // Specifies whether the dialog should be a modal
+        this.question.pack(); // Sets the size of the window relative to the components
+        this.question.setLocationRelativeTo(null); // Places the dialog in the center of the screen
     }
 
     void check() {
